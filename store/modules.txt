@@ -1,0 +1,17 @@
+{
+ "app_name": "erpnext_store",
+ "app_title": "ERPNext Store",
+ "app_publisher": "Your Company",
+ "app_description": "Public-facing storefront for ERPNext",
+ "app_email": "dev@yourcompany.com",
+ "app_license": "MIT",
+ "modules": [
+  {
+   "module_name": "ERPNext Store",
+   "color": "#2563eb",
+   "icon": "octicon octicon-package",
+   "type": "module",
+   "label": "ERPNext Store"
+  }
+ ]
+}
