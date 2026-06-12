@@ -14,24 +14,17 @@ website_route_rules = [
 ]
 
 # ------------------------------------------------------------------
-# DocTypes created by this app
+# Static assets — served directly from /assets/erpnext_store/
+# These are plain CSS/JS files copied by `bench build` via
+# Frappe's asset link step; no esbuild bundling needed.
+# They are injected into the page from www/store.html directly.
 # ------------------------------------------------------------------
-# (defined under erpnext_store/doctype/)
+# (No web_include_css / web_include_js here — those trigger esbuild.
+#  The store.html template loads the files with <link> / <script> tags.)
 
 # ------------------------------------------------------------------
-# CSS / JS assets bundled into the website
-# ------------------------------------------------------------------
-web_include_css = ["/assets/erpnext_store/css/store.css"]
-web_include_js  = ["/assets/erpnext_store/js/store.js"]
-
-# ------------------------------------------------------------------
-# Fixtures — export these doctypes when running bench export-fixtures
+# Fixtures
 # ------------------------------------------------------------------
 fixtures = [
     {"dt": "Store Category"},
 ]
-
-# ------------------------------------------------------------------
-# Permissions
-# ------------------------------------------------------------------
-# Guest users can call whitelisted API methods; no extra roles needed.

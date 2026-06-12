@@ -10,4 +10,17 @@ setup(
     zip_safe=False,
     include_package_data=True,
     install_requires=[],
+    package_data={
+        "erpnext_store": [
+            "public/css/*.css",
+            "public/js/*.js",
+            "www/*.html",
+            "www/*.py",
+            "templates/**/*.html",
+            "doctype/**/*.json",
+            "doctype/**/*.py",
+            "modules.txt",
+            "hooks.py",
+        ]
+    },
 )
