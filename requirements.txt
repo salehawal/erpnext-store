@@ -1,1 +1,1 @@
-frappe
+# Frappe is provided by the bench environment — do not list it here
