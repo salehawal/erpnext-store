@@ -20,6 +20,7 @@ setup(
             "store/doctype/**/*.json",
             "store/doctype/**/*.py",
             "modules.txt",
+            "patches.txt",
             "hooks.py",
         ]
     },
