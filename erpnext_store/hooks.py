@@ -14,15 +14,6 @@ website_route_rules = [
 ]
 
 # ------------------------------------------------------------------
-# Static assets — served directly from /assets/erpnext_store/
-# These are plain CSS/JS files copied by `bench build` via
-# Frappe's asset link step; no esbuild bundling needed.
-# They are injected into the page from www/store.html directly.
-# ------------------------------------------------------------------
-# (No web_include_css / web_include_js here — those trigger esbuild.
-#  The store.html template loads the files with <link> / <script> tags.)
-
-# ------------------------------------------------------------------
 # Fixtures
 # ------------------------------------------------------------------
 fixtures = [
