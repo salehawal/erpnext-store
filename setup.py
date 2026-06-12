@@ -17,8 +17,8 @@ setup(
             "www/*.html",
             "www/*.py",
             "templates/**/*.html",
-            "doctype/**/*.json",
-            "doctype/**/*.py",
+            "store/doctype/**/*.json",
+            "store/doctype/**/*.py",
             "modules.txt",
             "hooks.py",
         ]
